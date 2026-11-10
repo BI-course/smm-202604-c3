@@ -73,11 +73,11 @@ CORS(app, resources={r"/api/*": {"origins": [
 MODEL_DIR = "./model"
 
 regression_pipeline = joblib.load(
-    os.path.join(MODEL_DIR, "lasso_regressor_for_sme_revenue.joblib")
+    os.path.join(MODEL_DIR, "regression.joblib")
 )
 
 classification_pipeline = joblib.load(
-    os.path.join(MODEL_DIR, "svc_classifier_for_sme_credit_risk.joblib")
+    os.path.join(MODEL_DIR, "corporate_distress_pipeline.joblib")
 )
 
 clustering_artifact = joblib.load(
@@ -144,7 +144,7 @@ def predict_revenue():
 
     return jsonify({
         "predicted_monthly_revenue_kes": round(predicted_revenue_kes, 2),
-        "model": "Lasso Regressor",
+        "model": "regression",
     })
 
 
@@ -183,7 +183,7 @@ def predict_credit_risk():
             str(label): round(float(prob), 4)
             for label, prob in zip(class_labels, predicted_probabilities)
         },
-        "model": "Support Vector Classifier (tuned, SMOTE-resampled at training only)",
+        "model": "Classifier", # Clean and simple label
     })
 
 

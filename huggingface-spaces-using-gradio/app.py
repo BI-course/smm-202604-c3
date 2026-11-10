@@ -23,7 +23,7 @@ _warm_zerogpu()
 # principle api.py uses: load once at startup, reuse across every request
 # (here, across every tab and every submit click), never inside a function.
 # -----------------------------------------------------------------------
-regression_pipeline = joblib.load("lasso_regressor_for_sme_revenue.joblib")
+regression_pipeline = joblib.load("regression.joblib")
 classification_pipeline = joblib.load("svc_classifier_for_sme_credit_risk.joblib")
 
 clustering_artifact = joblib.load("kmeans_mall_customer_segmentation.joblib")
