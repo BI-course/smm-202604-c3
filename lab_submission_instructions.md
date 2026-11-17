@@ -38,11 +38,11 @@ cf# Lab Submission Instructions
 
 **Member 5:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**   |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:--------------|
+| **Student ID**                                                                                                                        | 169819        |
+| **Name**                                                                                                                              | Sumeiya Abass |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |        I was responsible for API integration and testing. I integrated the four machine learning models (Regression, Classification, Clustering, and Association Rule Mining) into a single Flask application (api.py). I configured the API to load all four trained model artifacts from disk, implemented prediction endpoints, input validation, and error handling. I also tested all four endpoints locally using HTTP POST requests with cURL, verified that the models returned predictions and recommendations, and tested invalid inputs to ensure appropriate error responses.       |
 
 ## Chosen Level of Difficulty
 
