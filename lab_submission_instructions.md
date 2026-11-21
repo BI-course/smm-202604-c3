@@ -46,7 +46,7 @@
 
 ## Chosen Level of Difficulty
 
-**Specify the chosen level of difficulty** (baseline, intermediate, or advanced):
+**Specify the chosen level of difficulty** (baseline, intermediate, or advanced):   **_Intermediate_**
 
 ## Video Demonstration
 
@@ -62,7 +62,7 @@ At minimum, the video must show, in one continuous walkthrough:
 
 Note that you are required to submit the link to the video and NOT the video itself. The video should NOT be uploaded to your repository—that would be a misuse of GitHub.
 
-**Link to the video:**
+**Link to the video:** https://drive.google.com/file/d/1qIqXp3HgM79A35K4sg-kI3VL7pldz_gd/view?usp=sharing
 
 ## Public URLs
 

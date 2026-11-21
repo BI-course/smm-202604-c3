@@ -138,7 +138,7 @@
     <a class="back-link" href="index.html">&larr; All endpoints</a>
     <span class="badge">Clustering</span>
     <h1>Mall Customer Segment Assignment</h1>
-    <p class="lead">Calls <code>POST /api/v1/models/mall-customer-segmenter/predictions</code></p>
+    <p class="lead">Calls <code>POST /api/v1/models/ecommerce-customer-segmenter/predictions</code></p>
 
     <form id="predictForm">
       <label for="age">Age</label>
@@ -162,9 +162,9 @@
   const isSecure = protocol === "https:";
 
   const API_ORIGIN = `${isSecure ? "https" : "http"}://${hostname}:${isSecure ? "443" : "5000"}`;
-  const API_URL = `${API_ORIGIN}/api/v1/models/mall-customer-segmenter/predictions`;
+  const API_URL = `${API_ORIGIN}/api/v1/models/ecommerce-customer-segmenter/predictions`;
 
-  // const API_URL = "http://127.0.0.1:5000/api/v1/models/mall-customer-segmenter/predictions";
+  // const API_URL = "http://127.0.0.1:5000/api/v1/models/ecommerce-customer-segmenter/predictions";
 
   // Business-facing profile for each cluster id the K-Means model can
   // return. This is reference material for a decision maker, so it only

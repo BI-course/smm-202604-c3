@@ -76,7 +76,7 @@
     <a class="back-link" href="index.html">&larr; All endpoints</a>
     <span class="badge">Classification</span>
     <h1>SME Credit Risk Classifier</h1>
-    <p class="lead">Calls <code>POST /api/v1/models/sme-credit-risk-classifier/predictions</code></p>
+    <p class="lead">Calls <code>POST /api/v1/models/corporate-financial-distress-classifier/predictions</code></p>
 
     <form id="predictForm">
       <div class="row">
@@ -214,9 +214,9 @@
   const isSecure = protocol === "https:";
 
   const API_ORIGIN = `${isSecure ? "https" : "http"}://${hostname}:${isSecure ? "443" : "5000"}`;
-  const API_URL = `${API_ORIGIN}/api/v1/models/sme-credit-risk-classifier/predictions`;
+  const API_URL = `${API_ORIGIN}/api/v1/models/corporate-financial-distress-classifier/predictions`;
 
-  // const API_URL = "http://127.0.0.1:5000/api/v1/models/sme-credit-risk-classifier/predictions";
+  // const API_URL = "http://127.0.0.1:5000/api/v1/models/corporate-financial-distress-classifier/predictions";
 
   document.getElementById("predictForm").addEventListener("submit", async function (e) {
     e.preventDefault();
