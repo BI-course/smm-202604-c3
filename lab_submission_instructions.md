@@ -1,4 +1,4 @@
-cf# Lab Submission Instructions
+# Lab Submission Instructions
 
 ## Student Details and Individual Member Contributions
 
@@ -6,11 +6,11 @@ cf# Lab Submission Instructions
 
 **Member 1:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**  |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:-------------|
+| **Student ID**                                                                                                                        | 168961       |
+| **Name**                                                                                                                              | George Makau |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |  I was responsible for deployment and cross-platform testing. I merged my teammates' branches (backend API routes, clustering, Apriori and API integration) into main, then got the four saved models loading and serving through api.py. I fixed the dependency problems that stopped them loading: I pinned scikit-learn 1.6.1 and imbalanced-learn 0.13.0 to match the versions the models were saved with, removed a conflicting mlxtend requirement, and added Gunicorn. I then Dockerized the API with Gunicorn (two replicas) behind an Nginx reverse proxy with a self-signed HTTPS certificate, and deployed the same unmodified api.py to Render. I tested all four endpoints with real category values locally, through Nginx in Docker, and on Render, and checked that all three returned identical predictions and that an empty request returned a clean 400 error. From this I learned that a saved model must be loaded with the same library versions it was trained with, that the API and its deployment matter as much as the model, and that free-tier hosting limits memory and number of workers.            |
 
 **Member 2:**
 
@@ -70,7 +70,7 @@ Fill in only the rows that apply to your chosen difficulty level (see Part C bel
 
 | **Deployment target**                             | **URL** |
 |:--------------------------------------------------|:--------|
-| Render (the full `api.py`, all endpoints)         |         |
+| Render (the full `api.py`, all endpoints)         | https://smm-202604-c3.onrender.com        |
 | Hugging Face Space (Gradio, one tab per model)    |         |
 | Streamlit Community Cloud app (one tab per model) |         |
 
